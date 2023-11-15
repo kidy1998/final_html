@@ -1,0 +1,128 @@
+.mainContainer {
+    width: 57%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin-left: 21%;
+}
+
+.mainContainer > div:nth-child(1) {
+    font-size: 30px;
+    font-weight: bolder;
+    line-height: normal;
+    margin-top: 15%;
+    margin-bottom: 35px;
+}
+
+.mainContainer > div:nth-child(2) {
+    color: #7C7C7C; 
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+    margin-bottom: 140px;
+
+}
+
+
+.mainContainer > div:nth-child(3) {
+    flex-basis: 6%;
+    width: 24%;
+    border-radius: 10px;
+    background: #FEE4D6;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 80px;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+
+.boardRectangle {
+    width: 100%;
+    flex-basis: 5%;
+    border: 5px solid #FEE4D6;
+    background: #FFF;
+}
+
+.boardRectangle_1 {
+    width: 100%;
+    flex-basis: 3%;
+    border: 5px solid #D2D2D2;
+    background: #FFF;
+}
+
+
+.titleContainer {
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.titleContainer  > div:nth-child(2) {
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+.titleContent {
+   flex-basis: 20%;
+    border-radius: 10px;
+    border: 5px solid #FEE4D6;
+    background: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 70px;
+    margin: 15px 0 15px 0;
+}
+
+.boardImage {
+    display: flex;
+    align-items: center;
+    width: 100%; 
+    margin-bottom: 15px;
+}
+
+.boardImage img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin-right: 10px; /* 이미지 간격 조절 */
+}
+
+.boardImage img:last-child {
+    margin-right: 0; /* 마지막 이미지는 오른쪽 간격을 없앰 */
+}
+
+
+.contentContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.contentTitle {
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+
+#boardContent {
+    width: 100%;
+    height: 213px;
+    border-radius: 10px;
+    border: 5px solid #FEE4D6;
+    background: #FFF;
+    line-height: 100px;
+}

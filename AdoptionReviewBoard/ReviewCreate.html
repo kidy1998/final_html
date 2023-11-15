@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입양후기 작성</title>
+    <link rel="stylesheet" href="css/ReviewCreate.css">
+</head>
+<body>
+    <div class="mainContainer">
+        <div>입양후기</div>
+        <div>안락사 없는 동물보호소 멍프랜드에서 행복한 입양 후기를 남겨주세요~</div>
+
+        <div>입양리뷰 인증게시판</div> 
+
+        <form action="#" id="formContainer">
+            <div class="boardRectangle"></div>
+            <div>제목</div>
+            <div class="boardRectangle"></div>
+            <input type="text" name="title" id="title" placeholder="제목을 입력하세요">   
+
+            <section id="dogImages">
+                <div class="file-input-container">
+                    <label for="dogImage_1" class="file-input-label">
+                        <span class="icon">📷</span> <!-- 여기에 아이콘 또는 이미지를 넣으세요 -->
+                    </label>
+                    <input type="file" id="dogImage_1" name="dogImage_1" class="file-input" accept="image/*">
+                </div>
+
+                <div class="file-input-container">
+                    <label for="dogImage_2" class="file-input-label">
+                        <span class="icon">📷</span> <!-- 여기에 아이콘 또는 이미지를 넣으세요 -->
+                    </label>
+                    <input type="file" id="dogImage_2" name="dogImage_2" class="file-input" accept="image/*">
+                </div>
+
+                <div class="file-input-container">
+                    <label for="dogImage_3" class="file-input-label">
+                        <span class="icon">📷</span> <!-- 여기에 아이콘 또는 이미지를 넣으세요 -->
+                    </label>
+                    <input type="file" id="dogImage_3" name="dogImage_3" class="file-input" accept="image/*">
+                </div>
+
+                <div class="file-input-container">
+                    <label for="dogImage_4" class="file-input-label">
+                        <span class="icon">📷</span> <!-- 여기에 아이콘 또는 이미지를 넣으세요 -->
+                    </label>
+                    <input type="file" id="dogImage_4" name="dogImage_4" class="file-input" accept="image/*">
+                </div>
+            </section>
+
+            <div class="boardRectangle"></div>
+            <div class="contentTitle">내용</div>
+            <div class="boardRectangle"></div>
+            <textarea name="reviewContent" id="reviewContent" cols="50" rows="36"></textarea>
+
+            <button id="writeReview">등록하기</button>
+        </form>
+    
+        
+    </div>
+</body>
+</html>

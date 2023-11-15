@@ -1,0 +1,206 @@
+.mainContainer {
+    width: 57%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin-left: 21%;
+}
+
+.mainContainer > div:nth-child(1) {
+    font-size: 30px;
+    font-weight: bolder;
+    line-height: normal;
+    margin-top: 15%;
+    margin-bottom: 35px;
+}
+
+.mainContainer > div:nth-child(2) {
+    color: #7C7C7C; 
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+    margin-bottom: 140px;
+
+}
+
+
+.mainContainer > div:nth-child(3) {
+    flex-basis: 6%;
+    width: 24%;
+    border-radius: 10px;
+    background: #FEE4D6;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 80px;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.boardList {
+    flex-basis: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.boardRectangle {
+    width: 100%;
+    flex-basis: 5%;
+    border: 5px solid #FEE4D6;
+    background: #FFF;
+}
+
+.boardRectangle_1 {
+    width: 100%;
+    flex-basis: 3%;
+    border: 5px solid #D2D2D2;
+    background: #FFF;
+}
+
+.boardTitle {
+
+    flex-basis: 22%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+
+}
+
+.boardTitle > div:nth-child(1) {
+    flex-basis: 15%;
+}
+
+.boardTitle > div:nth-child(2) {
+    flex-basis: 30%;
+}
+
+.boardTitle > div:nth-child(3) {
+    flex-basis: 15%;
+}
+
+.boardTitle > div:nth-child(4) {
+    flex-basis: 20%;
+}
+
+.boardTitle > div:nth-child(5) {
+    flex-basis: 20%;
+}
+
+
+.boardContent {
+
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 20px;
+    font-style: normal; 
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+.boardContent > div:nth-child(1) {
+    flex-basis: 15%;
+}
+
+.boardContent > div:nth-child(2) {
+    flex-basis: 30%;
+}
+
+.boardContent > div:nth-child(3) {
+    flex-basis: 15%;
+}
+
+.boardContent > div:nth-child(4) {
+    flex-basis: 20%;
+}
+
+.boardContent > div:nth-child(5) {
+    flex-basis: 20%;
+}
+
+
+
+.boardContent > div {
+    flex: 1;
+    text-align: center; /* 가운데 정렬을 위해 추가 */
+}
+
+
+
+
+#writeReview {
+
+    height: 50px;
+    width: 131px;
+    border-radius: 5px;
+    background: #FEE4D6;
+    margin-left: 88%;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+    margin-top: 650px;
+    margin-bottom: 70px;
+}
+ 
+ 
+#searchContainer {
+    height: 40px;
+    width: 575px;
+    display: flex;
+    margin-left: 28%;
+    margin-bottom: 40px;
+}
+
+#searchType {
+    width: 90px;
+    height: 39px;
+    border: 1px solid #000;
+    background: #FFF;
+    margin-right: 15px;
+}
+
+#searchContent {
+    width: 356px;
+    height: 35px;
+    border: 1px solid #000;
+    background: #FFF;
+    margin-right: 15px;
+}
+
+
+#searchButton {
+    width: 93px;
+    height: 39px; 
+    background: #FEE4D6;
+    cursor: pointer;
+}
+
+.pagination {
+    font: 400 20px "NanumGothic-Regular", sans-serif;
+    width: 575px;
+    height: 20px;
+    margin-left: 27%;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.pagination > a {
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+}
