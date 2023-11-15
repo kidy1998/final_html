@@ -1,3 +1,4 @@
+/* 전체 컨테이너 */
 .mainContainer {
     width: 57%;
     margin: 0;
@@ -5,8 +6,10 @@
     display: flex;
     flex-direction: column;
     margin-left: 21%;
+    margin-bottom: 10%;
 }
 
+/* 입양후기 */
 .mainContainer > div:nth-child(1) {
     font-size: 30px;
     font-weight: bolder;
@@ -15,6 +18,7 @@
     margin-bottom: 35px;
 }
 
+/* 안락사 없는~  */
 .mainContainer > div:nth-child(2) {
     color: #7C7C7C; 
     font-size: 25px;
@@ -25,7 +29,7 @@
 
 }
 
-
+/* 입양리뷰 인증게시판 */
 .mainContainer > div:nth-child(3) {
     flex-basis: 6%;
     width: 24%;
@@ -39,29 +43,31 @@
     margin-bottom: 2%;
 }
 
-
+/* 구분줄(굵음) */
 .boardRectangle {
     width: 100%;
     flex-basis: 5%;
-    border: 5px solid #FEE4D6;
+    border: 5px solid #F9C9B0;;
     background: #FFF;
 }
 
+/* 구분줄(얇음) */
 .boardRectangle_1 {
     width: 100%;
-    flex-basis: 3%;
-    border: 5px solid #D2D2D2;
-    background: #FFF;
+    height: 2px;
+    background: #F9C9B0;
+    border: 5px solid #ffffff;
 }
 
-
+/* 제목, 사진 컨테이너 */
 .titleContainer {
     flex-basis: 30%;
     display: flex;
     flex-direction: column;
+    font-size: 20px;
 }
 
-
+/* 제목 글자 */
 .titleContainer  > div:nth-child(2) {
     height: 50px;
     text-align: center;
@@ -71,8 +77,9 @@
     line-height: 50px;
 }
 
+/* 제목 내용 */
 .titleContent {
-   flex-basis: 20%;
+    flex-basis: 20%;
     border-radius: 10px;
     border: 5px solid #FEE4D6;
     background: #FFF;
@@ -80,9 +87,12 @@
     font-style: normal;
     font-weight: 400;
     line-height: 70px;
+    text-indent: 1em;
     margin: 15px 0 15px 0;
+    
 }
 
+/* 이미지 컨테이너 */
 .boardImage {
     display: flex;
     align-items: center;
@@ -90,6 +100,7 @@
     margin-bottom: 15px;
 }
 
+/* 이미지 */
 .boardImage img {
     width: 200px;
     height: 200px;
@@ -101,13 +112,14 @@
     margin-right: 0; /* 마지막 이미지는 오른쪽 간격을 없앰 */
 }
 
-
+/* 내용, 댓글  컨테이너*/
 .contentContainer{
     display: flex;
     flex-direction: column;
+    font-size: 20px;
 }
 
-
+/* 내용 글자 */
 .contentTitle {
     height: 50px;
     text-align: center;
@@ -115,9 +127,10 @@
     font-style: normal;
     font-weight: 700;
     line-height: 50px;
+    
 }
 
-
+/* 내용 */
 #boardContent {
     width: 100%;
     height: 213px;
@@ -125,4 +138,112 @@
     border: 5px solid #FEE4D6;
     background: #FFF;
     line-height: 100px;
+    text-indent: 1em;
+}
+
+/* 댓글 컨테이너 */
+.commentContainer {
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.commentContainer p:nth-child(1) {
+    flex-basis: 10%;
+    text-align: center;
+    font-weight: 700;
+}
+
+.commentContainer p:nth-child(2) {
+    margin-left: 5%;
+    flex-basis: 70%;
+}
+
+.commentContainer p:nth-child(3) {
+    flex-basis: 20%;
+    font-size: 15px;
+    text-align: end;
+    margin-right: 1%;
+}
+
+
+/* 답글 컨테이너 */
+.replyContainer {
+    margin-left: 15%;
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.replyContainer p:nth-child(1) {
+    flex-basis: 10%;
+    text-align: center;
+    font-weight: 700;
+}
+
+.replyContainer p:nth-child(2) {
+    margin-left: 5%;
+    flex-basis: 70%;
+}
+
+.replyContainer p:nth-child(3) {
+    flex-basis: 20%;
+    font-size: 15px;
+    text-align: end;
+    margin-right: 1%;
+}
+
+
+.buttons {
+    display: flex;
+    margin-left: 55%;
+}
+
+
+#updateReview {
+
+    height: 50px;
+    width: 131px;
+    border-radius: 5px;
+    background: #FEE4D6;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+    margin: 10px;
+}
+
+
+#deleteReview {
+
+    height: 50px;
+    width: 131px;
+    border-radius: 5px;
+    background: #FEE4D6;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+    margin: 10px;
+}
+
+
+
+#toList {
+
+    height: 50px;
+    width: 131px;
+    border-radius: 5px;
+    background: #FEE4D6;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+    margin: 10px;
 }

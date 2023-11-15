@@ -1,3 +1,4 @@
+/* 전체 컨테이너 */
 .mainContainer {
     width: 57%;
     margin: 0;
@@ -7,7 +8,7 @@
     margin-left: 21%;
 }
 
-
+/* 입양후기 */
 .mainContainer > div:nth-child(1) {
     font-size: 30px;
     font-weight: bolder;
@@ -16,6 +17,7 @@
     margin-bottom: 35px;
 }
 
+/* 안락사 없는~  */
 .mainContainer > div:nth-child(2) {
     color: #7C7C7C; 
     font-size: 25px;
@@ -27,6 +29,7 @@
 }
 
 
+/* 입양리뷰 인증게시판 */
 .mainContainer > div:nth-child(3) {
     flex-basis: 6%;
     width: 24%;
@@ -40,7 +43,7 @@
     margin-bottom: 2%;
 }
 
-
+/* 구분줄(굵음) */
 .boardRectangle {
     width: 100%;
     flex-basis: 5%;
@@ -48,7 +51,7 @@
     background: #FFF;
 }
 
-
+/* 작성내용 컨테이너 */
 #formContainer {
     flex-basis: 50%;
     width: 100%;
@@ -56,6 +59,7 @@
     flex-direction: column;
 }
 
+/* 제목 글자 */
 #formContainer > div:nth-child(2) {
     height: 50px;
     text-align: center;
@@ -65,6 +69,7 @@
     line-height: 50px;
 }
 
+/* 제목 input */
 #title {
     width: 100%;
     height: 88px;
@@ -72,8 +77,10 @@
     border: 5px solid #FEE4D6;
     background: #FFF;
     margin: 15px 0 15px 0;
+    text-indent: 1em;
 }
 
+/* 전체사진 컨테이너 */
 #dogImages {
     width: 100%;
     height: 270px;
@@ -83,7 +90,7 @@
     margin-bottom: 20px;
 }
 
-
+/* 각 사진 컨테이너  */
 .file-input-container {
     position: relative;
     flex-basis: 22%;
@@ -95,6 +102,7 @@
     margin: 15px;
 }
 
+/* 사진 */
 .file-input {
     position: absolute;
     top: 0;
@@ -105,6 +113,7 @@
     cursor: pointer;
 }
 
+/* 라벨 */
 .file-input-label {
     display: flex;
     align-items: center;
@@ -112,6 +121,7 @@
     height: 100%;
 }
 
+/* 내용 글자 */
 .contentTitle {
     height: 50px;
     text-align: center;
@@ -121,16 +131,19 @@
     line-height: 50px;
 }
 
-
+/* 내용 textarea */
 #reviewContent {
     margin: 15px 0 45px 0;
     border-radius: 10px;
     border: 5px solid #FEE4D6;
     background: #FFF;
     font-size: 20px;
+    text-indent: 1em;
 }
 
 
+
+/* 등록버튼 */
 #writeReview {
 
     height: 50px;

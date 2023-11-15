@@ -1,3 +1,4 @@
+/* 전체 컨테이너 */
 .mainContainer {
     width: 57%;
     margin: 0;
@@ -7,6 +8,7 @@
     margin-left: 21%;
 }
 
+/* 입양후기 */
 .mainContainer > div:nth-child(1) {
     font-size: 30px;
     font-weight: bolder;
@@ -15,6 +17,7 @@
     margin-bottom: 35px;
 }
 
+/* 안락사 없는~  */
 .mainContainer > div:nth-child(2) {
     color: #7C7C7C; 
     font-size: 25px;
@@ -25,7 +28,7 @@
 
 }
 
-
+/* 입양리뷰 인증게시판 */
 .mainContainer > div:nth-child(3) {
     flex-basis: 6%;
     width: 24%;
@@ -39,6 +42,7 @@
     margin-bottom: 2%;
 }
 
+/* 게시글 컨테이너 */
 .boardList {
     flex-basis: 50%;
     width: 100%;
@@ -47,6 +51,7 @@
 
 }
 
+/* 구분줄(굵음) */
 .boardRectangle {
     width: 100%;
     flex-basis: 5%;
@@ -54,6 +59,7 @@
     background: #FFF;
 }
 
+/* 구분줄(얇음) */
 .boardRectangle_1 {
     width: 100%;
     flex-basis: 3%;
@@ -61,6 +67,7 @@
     background: #FFF;
 }
 
+/* 게시글 구분 컨테이너 */
 .boardTitle {
 
     flex-basis: 22%;
@@ -75,6 +82,7 @@
 
 }
 
+/* 번호, 제목, 작성자, 작성일, 조회수 */
 .boardTitle > div:nth-child(1) {
     flex-basis: 15%;
 }
@@ -95,7 +103,7 @@
     flex-basis: 20%;
 }
 
-
+/* 게시글 내용 컨테이너 */
 .boardContent {
 
     flex-basis: 40%;
@@ -140,7 +148,7 @@
 
 
 
-
+/* 글쓰기 버튼 */
 #writeReview {
 
     height: 50px;
@@ -157,7 +165,7 @@
     margin-bottom: 70px;
 }
  
- 
+ /* 검색창 컨테이너 */
 #searchContainer {
     height: 40px;
     width: 575px;
@@ -166,6 +174,7 @@
     margin-bottom: 40px;
 }
 
+/* select */
 #searchType {
     width: 90px;
     height: 39px;
@@ -174,21 +183,24 @@
     margin-right: 15px;
 }
 
+/* 검색어 입력창 */
 #searchContent {
     width: 356px;
     height: 35px;
     border: 1px solid #000;
     background: #FFF;
     margin-right: 15px;
+    text-indent: 1em;
 }
 
-
+/* 검색버튼 */
 #searchButton {
     width: 93px;
     height: 39px; 
     background: #FEE4D6;
     cursor: pointer;
 }
+
 
 .pagination {
     font: 400 20px "NanumGothic-Regular", sans-serif;
