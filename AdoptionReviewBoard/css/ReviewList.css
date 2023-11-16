@@ -43,35 +43,33 @@
     
 }
 
-/* 게시글 컨테이너 */
+/* 게시글 테이블 */
 .boardList {
     flex-basis: 50%;
     width: 100%;
-    display: flex;
-    flex-direction: column;
+    border-collapse: collapse;
 
 }
+
 
 /* 구분줄(굵음) */
 .boardRectangle {
     width: 100%;
-    flex-basis: 2%;
-    border: 3px solid #FEE4D6;
-    background: #FFF;
+    border: 1.5px solid #FEE4D6;
+    background: #FEE4D6;
 }
 
 /* 구분줄(얇음) */
 .boardRectangle_1 {
     width: 100%;
-    flex-basis: 3%;
-    border: 2px solid #D2D2D2;
-    background: #FFF;
+    border: 1.5px solid #D2D2D2;
+    background: #D2D2D2;
 }
 
-/* 게시글 구분 컨테이너 */
+/* 게시글 타이틀 */
 .boardTitle {
 
-    flex-basis: 22%;
+    height: 20%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -84,7 +82,16 @@
 }
 
 /* 번호, 제목, 작성자, 작성일, 조회수 */
-.boardTitle > div:nth-child(1) {
+.boardTitle > th:nth-child(1) { width: 15%; }
+.boardTitle > th:nth-child(2)  { width: 40%; }
+.boardTitle > th:nth-child(3)  { width: 15%; }
+.boardTitle > th:nth-child(4)  { width: 15%; }
+.boardTitle > th:nth-child(5)  { width: 15%; }
+
+
+
+/* 번호, 제목, 작성자, 작성일, 조회수 */
+/* .boardTitle > div:nth-child(1) {
     flex-basis: 15%;
 }
 
@@ -102,12 +109,12 @@
 
 .boardTitle > div:nth-child(5) {
     flex-basis: 20%;
-}
+} */
 
 /* 게시글 내용 컨테이너 */
 .boardContent {
 
-    flex-basis: 40%;
+    height: 20%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -120,7 +127,15 @@
     text-align: center;
 }
 
-.boardContent > div:nth-child(1) {
+
+.boardContent > td:nth-child(1) { width: 15%; }
+.boardContent > td:nth-child(2)  { width: 40%; }
+.boardContent > td:nth-child(3)  { width: 15%; }
+.boardContent > td:nth-child(4)  { width: 15%; }
+.boardContent > td:nth-child(5)  { width: 15%; }
+
+
+/* .boardContent > div:nth-child(1) {
     flex-basis: 15%;
 }
 
@@ -138,14 +153,15 @@
 
 .boardContent > div:nth-child(5) {
     flex-basis: 20%;
-}
+} */
 
 
 
+/* 
 .boardContent > div {
     flex: 1;
-    text-align: center; /* 가운데 정렬을 위해 추가 */
-}
+    text-align: center; 
+} */
 
 
 
