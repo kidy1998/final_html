@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combined Bar and Line Chart</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <canvas id="myChart" width="400" height="200"></canvas>
+
+    <script>
+        const months = ["9월", "10월", "11월", "12월"];
+        const adoptions = [10, 15, 20, 18];
+        const admissions = [5, 8, 12, 10];
+
+        const ctx = document.getElementById('myChart').getContext('2d');
+
+        new Chart(ctx, {
+            type: 'bar', // 바탕이 되는 그래프를 바 그래프로 설정
+            data: {
+                labels: months,
+                datasets: [
+                    {
+                        label: '입양',
+                        data: adoptions,
+                        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                        borderColor: 'rgba(75, 192, 192, 1)',
+                        borderWidth: 1
+                    },
+                    {
+                        label: '입소',
+                        data: admissions,
+                        backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                        borderColor: 'rgba(255, 99, 132, 1)',
+                        borderWidth: 1
+                    },
+                    {
+                        
+                        type: 'line', // 추가된 라인 그래프
+                        data: adoptions,
+                        fill: false,
+                        borderColor: 'rgba(75, 192, 192, 1)',
+                        borderWidth: 2,
+                        pointRadius: 5, // 데이터 포인트 크기
+                        yAxisID: 'adopt-y-axis' // y축을 'adopt-y-axis'로 설정
+                    },
+                    {
+                        
+                        type: 'line', // 추가된 라인 그래프
+                        data: admissions,
+                        fill: false,
+                        borderColor: 'rgba(255, 99, 132, 1)',
+                        borderWidth: 2,
+                        pointRadius: 5, // 데이터 포인트 크기
+                        xAxisID: 'admit-x-axis' // y축을 'admit-y-axis'로 설정
+                    }
+                ]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        display: false
+                    }
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>

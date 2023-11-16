@@ -1,0 +1,10 @@
+/* 전체 컨테이너 */
+.mainContainer {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin-left: 21%;
+    margin-bottom: 2%;
+}

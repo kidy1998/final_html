@@ -15,25 +15,43 @@
 
         <div>입양리뷰 인증게시판</div> 
 
-        <section class="boardList"> 
+        <table class="boardList"> 
             <div class="boardRectangle"></div>
-            <div class="boardTitle">
-                <div>게시글 번호</div> <div>제목</div> <div>작성자</div> <div>작성일</div> <div>조회수</div>
-            </div>
-            <div class="boardRectangle"></div>
-            <div class="boardContent">
-                <div>3</div> <div>저희 모카 잘 지내고 있어요~</div> <div>이쁜이</div> <div>23.11.15</div> <div>1</div>
-            </div>
-            <div class="boardRectangle_1"></div>
-            <div class="boardContent">
-                <div>2</div> <div>우리 레오를 만나게 해주셔서 감사합니다!</div> <div>뽀삐뽀</div> <div>23.10.27</div> <div>5</div>
-            </div>
-            <div class="boardRectangle_1"></div>
-            <div class="boardContent">
-                <div>1</div> <div>봄이를 입양했어요 :)</div> <div>예슬</div> <div>23.09.01</div> <div>11</div>
-            </div>
-            <div class="boardRectangle_1"></div>
-        </section>
+
+            <thead class="boardTitle">
+                <tr>
+                    <th>글번호</th>
+                    <th>제목</th>
+                    <th>작성자</th>
+                    <th>작성일</th>
+                    <th>조회수</th>
+                    <th>좋아요</th>
+                </tr>
+            </thead>
+            
+   
+            <tbody class="boardContent">
+                <tr>
+                    <td>3</td> <td>저희 모카 잘 지내고 있어요~</td> <td>이쁜이</td> <td>23.11.15</td> <td>1</td>
+                </tr>
+
+                <tr><div class="boardRectangle_1"></div></tr>
+                
+                <tr>
+                    <td>2</td> <td>우리 레오를 만나게 해주셔서 감사합니다!</td> <td>뽀삐뽀</td> <td>23.10.27</td> <td>5</td>
+                </tr>
+
+                <tr><div class="boardRectangle_1"></div></tr>
+
+                <tr>
+                    <td>1</td> <td>봄이를 입양했어요 :)</td> <td>예슬</td> <td>23.09.01</td> <td>11</td>
+                </tr>
+
+                <tr><div class="boardRectangle_1"></div></tr>
+
+            </tbody>
+           
+        </table>
 
 
         <button id="writeReview">글쓰기</button>

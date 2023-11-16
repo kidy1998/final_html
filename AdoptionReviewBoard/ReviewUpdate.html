@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입양후기 수정</title>
+    <link rel="stylesheet" href="css/ReviewUpdate.css">
+</head>
+<body>
+     
+    <div class="mainContainer">
+        <div>입양후기</div>
+        <div>안락사 없는 동물보호소 멍프랜드에서 행복한 입양 후기를 남겨주세요~</div>
+
+        <div>입양리뷰 인증게시판</div> 
+        <span style="text-align: end;">조회수 : 11</span>
+
+        <form action="#" class="formContainer">
+        
+            <div class="boardRectangle"></div>
+            <div>제목</div>
+            <div class="boardRectangle"></div>
+            <input type="text" name="title" class="titleContent" value="봄이를 입양했어요 :)"></input>
+            <div class="boardImage">
+                <img src="images/image24.png" alt="">
+                <img src="images/image25.png" alt="">
+                <img src="images/image26.png" alt="">
+                <div class="file-input-container">
+                    <label for="dogImage_1" class="file-input-label">
+                        <span class="icon">📷</span> <!-- 여기에 아이콘 또는 이미지를 넣으세요 -->
+                    </label>
+                    <input type="file" id="dogImage_1" name="dogImage_1" class="file-input" accept="image/*">
+                </div>
+            </div>
+      
+
+        
+
+            <div class="boardRectangle"></div>
+            <div class="contentTitle">내용</div>
+            <div class="boardRectangle"></div>
+            <textarea name="content" id="boardContent"> 봄이를 입양했는데 너무너무 잘 적응하고 잘 지내네요 ~  좋은 인연 만들어주셔서 감사합니다!!! </textarea>
+          
+        </form>  
+           
+        
+
+
+    </div>
+    
+    <section class="buttons">   
+        <button id="updateReview" onclick="submitForm()">수정하기</button>
+        <button id="toList">목록으로</button>
+    </section>
+    
+       
+
+    <script>
+        function submitForm() {
+            document.querySelector('form').submit();
+        }
+    </script>
+
+</body>
+</html>

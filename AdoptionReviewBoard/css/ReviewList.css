@@ -1,45 +1,46 @@
 /* 전체 컨테이너 */
 .mainContainer {
-    width: 57%;
+    width: 45%;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
-    margin-left: 21%;
+    margin-left: 27%;
 }
 
 /* 입양후기 */
 .mainContainer > div:nth-child(1) {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bolder;
     line-height: normal;
     margin-top: 15%;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
 }
 
 /* 안락사 없는~  */
 .mainContainer > div:nth-child(2) {
     color: #7C7C7C; 
-    font-size: 25px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 400;
     line-height: normal; 
-    margin-bottom: 140px;
+    margin-bottom: 50px;
 
 }
 
 /* 입양리뷰 인증게시판 */
 .mainContainer > div:nth-child(3) {
-    flex-basis: 6%;
-    width: 24%;
+    flex-basis: 3%;
+    width: 25%;
     border-radius: 10px;
     background: #FEE4D6;
-    font-size: 25px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 700;
-    line-height: 80px;
+    line-height: 50px;
     text-align: center;
-    margin-bottom: 2%;
+    margin-bottom: 20px;
+    
 }
 
 /* 게시글 컨테이너 */
@@ -54,8 +55,8 @@
 /* 구분줄(굵음) */
 .boardRectangle {
     width: 100%;
-    flex-basis: 5%;
-    border: 5px solid #FEE4D6;
+    flex-basis: 2%;
+    border: 3px solid #FEE4D6;
     background: #FFF;
 }
 
@@ -63,7 +64,7 @@
 .boardRectangle_1 {
     width: 100%;
     flex-basis: 3%;
-    border: 5px solid #D2D2D2;
+    border: 2px solid #D2D2D2;
     background: #FFF;
 }
 
@@ -74,7 +75,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: 20px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -110,12 +111,12 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: 20px;
+    font-size: 15px;
     font-style: normal; 
     font-weight: 400;
     line-height: normal;
-    margin-top: 2%;
-    margin-bottom: 2%;
+    margin-top: 1%;
+    margin-bottom: 1%;
     text-align: center;
 }
 
@@ -151,18 +152,19 @@
 /* 글쓰기 버튼 */
 #writeReview {
 
-    height: 50px;
-    width: 131px;
-    border-radius: 5px;
+    height: 30px;
+    width: 80px;
+    border-radius: 3px;
     background: #FEE4D6;
     margin-left: 88%;
-    font-size: 20px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     cursor: pointer;
     margin-top: 650px;
     margin-bottom: 70px;
+    border: 1px solid #000;
 }
  
  /* 검색창 컨테이너 */
@@ -170,8 +172,8 @@
     height: 40px;
     width: 575px;
     display: flex;
-    margin-left: 28%;
-    margin-bottom: 40px;
+    margin-left: 17%;
+    margin-bottom: 30px;
 }
 
 /* select */
@@ -181,6 +183,7 @@
     border: 1px solid #000;
     background: #FFF;
     margin-right: 15px;
+    border-radius: 5px;
 }
 
 /* 검색어 입력창 */
@@ -191,22 +194,25 @@
     background: #FFF;
     margin-right: 15px;
     text-indent: 1em;
+    border-radius: 5px;
 }
 
 /* 검색버튼 */
 #searchButton {
     width: 93px;
     height: 39px; 
+    border: 1px solid #000;
     background: #FEE4D6;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 
 .pagination {
-    font: 400 20px "NanumGothic-Regular", sans-serif;
+   
     width: 575px;
     height: 20px;
-    margin-left: 27%;
+    margin-left: 15%;
     text-align: center;
     margin-bottom: 100px;
 }
@@ -215,4 +221,6 @@
     margin: 10px;
     text-decoration: none;
     color: black;
+    font-size: 17px;
+    font-weight: 500;
 }
