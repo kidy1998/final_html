@@ -1,3 +1,5 @@
+@font-face { font-family: 'NanumGothic';src: url('/fonts/NanumGothic.eot');src: url('/fonts/NanumGothic.eot') format('embedded-opentype'),url('/fonts/NanumGothic.woff') format('woff');}
+
 /* 전체 컨테이너 */
 .mainContainer {
     width: 45%;
@@ -189,7 +191,7 @@
     width: 575px;
     display: flex;
     margin-left: 17%;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 /* select */
@@ -230,13 +232,14 @@
     height: 20px;
     margin-left: 15%;
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 }
 
 .pagination > a {
     margin: 10px;
     text-decoration: none;
     color: black;
-    font-size: 17px;
+    font-size: 20px;
     font-weight: 500;
+    line-height: 70px;
 }
